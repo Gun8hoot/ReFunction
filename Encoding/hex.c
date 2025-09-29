@@ -46,6 +46,18 @@ void	HEX2ASCII(char *input, char *output)
 	free(arr);
 }
 
+void	ASCII2HEX(const char *str)
+{
+	int	i = 0;
+	int size = strlen(str);
+
+	while (str[i])
+	{
+		
+		i++;
+	}
+}
+
 int main(void)
 {
 	char 	*enco = "2b67";

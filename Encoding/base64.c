@@ -1,3 +1,5 @@
+// NOT FINISH THE FUNCTION YET
+
 #include <stdio.h>
 #include <string.h>
 #define BASE64 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
