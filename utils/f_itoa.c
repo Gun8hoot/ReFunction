@@ -20,9 +20,10 @@ char *f_itoa(int toConvert)
 	int i = 0;
 	int character = 0;
 	char *strRevers = NULL;
-    strRevers = malloc(sizeof(char) * intlen(toConvert) + 1);  // Max 3 int + \0 char
 	char *str;
 
+    if ((strRevers = malloc(sizeof(char) * intlen(toConvert) + 1)) == NULL)
+        return NULL;
 	while (toConvert != 0)
 	{
 		character = toConvert % 10;
@@ -35,9 +36,7 @@ char *f_itoa(int toConvert)
 		return NULL;
 	while (strRevers[i])
 	{
-        printf("%d : ", i);
 		str[i++] = strRevers[(strlen(strRevers) - 1) - i];
-        printf("%d\n", i);
 	}
 	str[i] = '\0';
 	return (str);

@@ -14,9 +14,8 @@ void	HEX2ASCII(char *input, char *output)
 	int 			j;
 
 	int 			*arr = malloc(sizeof(int) * length);
-	if 				(arr == NULL) {
+	if 				(arr == NULL)
 		return;
-	}
 
 	output = malloc(sizeof(char) * (length/2));
 	if (output == NULL) {
@@ -33,9 +32,7 @@ void	HEX2ASCII(char *input, char *output)
 			j = 0;
 			size -= 1;
 			while (HEX[j] != input[w])
-			{
 				j++;
-			}
 			arr[pos] += (j * (pow(16, size)));
 		}
 		output[pos] = (char)arr[pos];
